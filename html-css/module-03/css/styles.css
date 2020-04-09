@@ -1,10 +1,9 @@
 body {
      margin: 0px;
      padding: 0px;
-     /* width: 1200px; */
      font-family: 'Playfair Display', serif;    
      font-size: 14px;
-     /* background-color: rgb(161, 26, 26); */
+     color: #626262;
     }
     /* site navigation */
     header {
@@ -40,7 +39,7 @@ body {
         margin-right: 96px;
     }
     .site-navigation a {
-     display: inline-block;
+     display: block;
      color: #626262;
      text-transform: uppercase;
      text-decoration: none;
@@ -60,20 +59,77 @@ body {
         color: #03a9f4;
     }
        /* main */
-     .main-conteiner {
-    width: 420px;
-    margin-right: 60px;
+       .main-main p,
+       .main-main h2 {
+            margin: 0px;
+
+
+        /* background-color: #e84545; */
     }
-     article {
+    .main-list {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        font-size: 0px;
+    }
+    .main-list-item {
+       width: 420px;
+       display: inline-block;
+       /* color: #626262; */
+       margin-bottom: 132px;
+    }
+    /* забераємо праві марженти */
+    .main-list-item:nth-child(2n-1){
+        margin-right: 60px;
+    }
+    /* забераємо нижні марженти */
+    .main-list-item:nth-last-child(-n+2) {
+        margin-bottom: 0px;
+    }
+
+    .main-list-item h2 {
+        font-size: 30px;
+        font-weight: normal;
+        margin-top: 0px;
+        margin-bottom: 36px;
+    }
+    .main-list-item p {
+        font-size: 14px;
+        line-height: 24px;
+        
+    }
+    .main-conteiner .main-paragraf {
+        font-family: 'Ubuntu', sans-serif;
+        text-transform: uppercase;
+        font-weight: lighter;
+        margin-top: 0px;
+        margin-bottom: 32px;
+        color: #b4ad9e;
+    }
+    .main-list-item img {
+        margin-bottom: 30px;
+    }
+    
+    /* article {
     display: inline-block;
-    font-size: 0px;
+    font-size: 0px; */
+    
+        /* font-size: 0px;       */
+    /* }
+    .main-main article:nth-child(1){
+        margin-right: 60px;
     }
-    .main-main {
-        background-color: #e84545;
-      
-    }
-
-
+    .main-conteiner {
+        width: 420px;
+        /* font-size: 14px; */
+        /* margin-right: 60px; */
+        /* }
+        .main-conteiner p {
+            font-size: 14px;
+        }
+        .main-conteiner h2 {
+            font-size: 30px;
+        } */ */
 
 
     img{
