@@ -8,95 +8,73 @@ body {
     /* site navigation */
     header {
        height: 190px;
-        /* background-color: rgb(64, 158, 84); */
     }
     nav{
         padding-top: 76px;
-        /* background-color:rgb(123, 108, 207);
-    } */
-}
+    } 
     .site-navigation {
-     margin: 0px; 
-     padding-left: 164px;
-     /* padding: 0px; */
-     /* vertical-align: middle; */
-     /* text-align: center; */
-     /* height: 200px; */
-     
+        margin: 0px; 
+        padding-left: 164px;
     }
     .site-navigation li {
         display: inline-block;
     }
     .site-navigation li:nth-child(1){
-     margin-right: 122px;
+        margin-right: 122px;
     }
-
     .site-navigation li:nth-child(2){
         margin-right: 102px;
      }
-
     .site-navigation li:nth-child(3){
         margin-right: 96px;
     }
     .site-navigation a {
-     display: block;
-     color: #626262;
-     text-transform: uppercase;
-     text-decoration: none;
-     line-height: 24px;
-    }
-      
+        display: block;
+         color: #626262;
+        text-transform: uppercase;
+        text-decoration: none;
+        line-height: 24px;
+    }      
     .conteiner {
         width: 900px;
         margin: 0 auto;
-        /* background-color: rgb(236, 61, 61); */
     }
-    .site-navigation a:hover,
-    .site-navigation a:focus {
-       color: #e84545;
-    } 
-    .Link-first{
+    .site-navigation .Link-first:hover {
         color: #03a9f4;
     }
+
        /* main */
-       .main-main p,
-       .main-main h2 {
-            margin: 0px;
-
-
-        /* background-color: #e84545; */
+    .main-content p,
+    .main-content h2 {
+        margin: 0px; 
     }
     .main-list {
         list-style: none;
-        margin: 0;
-        padding: 0;
+        margin: 0px 0px 52px 0px;
+        padding: 0px;
         font-size: 0px;
     }
     .main-list-item {
        width: 420px;
        display: inline-block;
-       /* color: #626262; */
        margin-bottom: 132px;
     }
     /* забераємо праві марженти */
     .main-list-item:nth-child(2n-1){
         margin-right: 60px;
     }
-    /* забераємо нижні марженти */
+    /* забераємо нижні марженти в останіх двох */
     .main-list-item:nth-last-child(-n+2) {
         margin-bottom: 0px;
     }
-
     .main-list-item h2 {
         font-size: 30px;
         font-weight: normal;
-        margin-top: 0px;
         margin-bottom: 36px;
     }
     .main-list-item p {
         font-size: 14px;
-        line-height: 24px;
-        
+        line-height: 24px;   
     }
     .main-conteiner .main-paragraf {
         font-family: 'Ubuntu', sans-serif;
@@ -109,28 +87,18 @@ body {
     .main-list-item img {
         margin-bottom: 30px;
     }
-    
-    /* article {
-    display: inline-block;
-    font-size: 0px; */
-    
-        /* font-size: 0px;       */
-    /* }
-    .main-main article:nth-child(1){
-        margin-right: 60px;
+    .Load_more_button {
+        padding: 0px;
+        width: 164px;
+        height: 60px;
+        font-size: 20px;
+        line-height: 24px;
+        font-family: 'Times New Roman';
+        color: #626262;
     }
-    .main-conteiner {
-        width: 420px;
-        /* font-size: 14px; */
-        /* margin-right: 60px; */
-        /* }
-        .main-conteiner p {
-            font-size: 14px;
-        }
-        .main-conteiner h2 {
-            font-size: 30px;
-        } */ */
-
+    .Load_more {
+        text-align: center;
+    }
 
     img{
         display: block;
@@ -138,103 +106,5 @@ body {
         height: auto;
     }
     
-    /* .site-log {
-        display: inline-block;
-    vertical-align: middle;
-    }
-        
-    .container {
-    width: 1400px;
-    margin: 0px auto 0px auto;
-    background-color: rgb(188, 164, 194);
-      }
-      .main-nav {
-          padding: 30px 0px;
-      }
-      
-      .main-manu {
-         display: inline-block;
-         vertical-align: middle;
-         width: 970px;
-         margin: 0px; 
-         padding: 0px;
-         font-size: 14px;
-         list-style: none;
-         text-align: right;
-      }
-      .main-manu li {
-          display: inline-block;
-          
-      }
-      .main-manu li:not(:last-child) {
-        margin-right: 48px;
-      }
-      .main-manu a {
-          color: #ffffff;
-          font-weight: 700;
-          text-transform: uppercase;
-          text-decoration: none;
-          line-height: 16px;
-    
-      }
-      .main-manu a:hover,
-      .main-manu a:focus {
-         color: #e84545;
-      } */
-
-
-
-/* html {
-    box-sizing: border-box;   
-   }
-   *,
-   *::before, 
-   *::after {
-   box-sizing: inherit;
-    /* outline: 1px solid red; */
-   /* } 
-   body {
-     font-family: "Relaway" "Arial" sans-serif; font-family: 'Playfair Display', serif;
-     /* color: #6c7279;  */
-    
-/*    
-     }
-     .main-manu a:hover,
-     .main-manu a:focus {
-        color: #e84545;
-     } */
-   /* .site-log {
-       display: inline-block;
-       margin-top: 21px;
-       margin-left: 150px;
-       margin-bottom: 0px;
-   }
    
-    <link rel="stylesheet" href="css/style.css">
-       <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Playfair+Display:400,400i,500,600,700,800&display=swap" >
-   .logo {
-       background-color: rgb(0, 0, 0);
-       height: 70px;
-   }
-   .main-nav {
-       display: inline-block; 
-       margin-left: 200px;
-       position: absolute;
-       margin-top: 20px;
-       }
-   .main-manu {
-       list-style: none;
-       margin: 0; /* Нет отступов вокруг */
-       /* padding: 0; /* Убираем поля вокруг текста */
-   /* }
-   .main-menu-item {
-       display: inline-block;
-       margin-right: 20px;
-   }
-   /* a .site-log {
-       display: inline-block;
-   } */
-   /* .maain-menu-link {
-       display: inline-block;
-       text-decoration: none;  
-   } */  
+    
