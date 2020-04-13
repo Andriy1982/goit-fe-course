@@ -14,8 +14,9 @@ nav{
     padding: 76px 0px 104px ;
     } 
 .site-navigation {
-    margin: 0px; 
-    padding-left: 164px;
+    margin: 0px;
+    padding: 0px; 
+    text-align: center;
     }
 .site-navigation li {
     display: inline-block;
@@ -40,7 +41,8 @@ nav{
     width: 900px;
     margin: 0 auto;
     }
-.site-navigation .Link-first:hover {
+.site-navigation a:hover,
+.site-navigation a:focus {
     color: #03a9f4;
     }
 .main-content p,
@@ -84,7 +86,7 @@ nav{
 .main-list-item img {
     margin-bottom: 30px;
     }
-.Load_more_button {
+.load_more_button {
     padding: 0px;
     width: 164px;
     height: 60px;
@@ -92,8 +94,9 @@ nav{
     line-height: 24px;
     font-family: 'Times New Roman';
     color: #626262;
+    cursor: pointer;
     }
-.Load_more {
+.load_more {
     text-align: center;
     }
     
