@@ -1,3 +1,133 @@
+body {
+    /* margin: 0px;
+    padding: 0px;    */
+    color: #555252;
+    /* background-color: rgb(218, 120, 120); */
+   }  
+.conteiner {
+    width: 1110px;
+    margin: 0 auto;
+    /* background-color: rgb(65, 161, 116); */
+    }
+.clearfix::after {
+    display: table;
+    content: '';
+    clear: both;
+}    
+h2, 
+h3,
+p {
+    margin: 0;
+    padding: 0;
+}
+/* Section Product */
+
+.produkt-list {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+.produkt-list-item {
+    float: left; 
+    width: 255px; 
+    outline: 2px solid green; 
+}
+.produkt-list-item:not(:nth-child(4n)) {
+margin-right: 30px;
+}
+.produkt-list-item:not(:nth-last-child(-n+4)) {
+margin-bottom: 30px;
+}
+.product {
+    margin-bottom: 106px;
+}
+
+/* Section Blog */
+/* 
+.blog {
+    
+
+} */
+.blog h2 {
+    margin-bottom: 30px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 48px;
+    font-weight: 900px;
+    line-height: 32px;
+    /* padding: 20px; */
+    text-align: center;
+}
+
+.news {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+.news::before {
+    display: block;
+    margin: 0px auto 80px;
+    width: 164px;
+    height: 8px;
+    content: '' ;
+    background-color: #4ec6ab;
+}
+.news-item {
+   float: left; 
+   width: 350px; 
+}
+.news-item:not(:last-child) {
+    margin-right: 30px;
+}
+.news-item img {
+    margin-bottom: 14px; 
+}
+
+.news-item h3 {   
+    font-family: 'Open Sans', sans-serif;
+    margin-bottom: 12px;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 26px;
+}
+/* .news-item h3::after {
+    display: block;
+    margin-top: 12px;
+    width: 136px;
+    height: 4px;
+    content: '' ;
+    background-color: #4ec6ab;
+} */
+/* Полоса між абзацом і текстом */
+.news-item p::before {
+    display: block;
+    margin-bottom: 26px;
+    width: 136px;
+    height: 4px;
+    content: '' ;
+    background-color: #4ec6ab;
+}
+
+.news-item p {
+    margin-bottom: 14px;
+}
+.news-item p {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
+    line-height: 26px;
+}
+.read_more_button {
+    padding: 16px 46px;
+    border-radius: 5px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight:300;
+    font-size: 16px;
+    line-height: 26px;
+    color: #ffffff ;
+    background-color: rgb( 78, 198, 171 );
+    box-shadow: 1px 1.732px 5px 0px rgb( 0, 0, 0 );
+    margin-bottom: 44px;
+    cursor: pointer;
+}
 /* body {
      margin: 0px;
      padding: 0px;
