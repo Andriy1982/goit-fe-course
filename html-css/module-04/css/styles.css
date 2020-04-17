@@ -116,11 +116,11 @@ margin-bottom: 30px;
 }
 
 .products-name {
-    background-color: rgb( 50, 50, 50 );
+    /* background-color: rgb( 50, 50, 50 ); */
 }
 .products-name h3 {
     float: left;
-    /* background-color: rgb( 50, 50, 50 ); */
+    background-color: rgb( 50, 50, 50 );
     font-size: 18px;
     font-family: 'Roboto', sans-serif;
     color: rgb( 255, 255, 255 );
@@ -128,7 +128,7 @@ margin-bottom: 30px;
     line-height: 32px;
     font-weight: 900;
     text-align: center;
-    width: 200px;
+    width: 201px;
 }
 .products-name p {
     font-size: 18px;
@@ -140,9 +140,14 @@ margin-bottom: 30px;
     width: 54px;
     text-align: center;
     line-height: 32px;
+    
 }
+.products-name p {
+    background-color: rgba( 50, 50, 50 ,0.44);
+}
+
 .products-name p::before {
-    content: \0024;
+    content: '\0024';
 }
 /* Section Blog */
 /* 
