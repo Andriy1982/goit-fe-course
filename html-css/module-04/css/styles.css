@@ -1,3 +1,11 @@
+html {
+    box-sizing: border-box;
+}
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
 body {
        color: #555252;
    }  
@@ -110,7 +118,7 @@ p {
 .products-name h3 {
     float: left;
     padding: 7px 0px 7px 14px;
-    width: 187px;
+    width: 201px;
     font-size: 18px;
     font-family: 'Roboto', sans-serif;
     text-transform: uppercase;
@@ -134,8 +142,9 @@ p {
 .products-name p {
     background-color: rgba( 50, 50, 50 ,0.44);
 }
-.products-name p::before {
-    content: '\0024';
+.products-name a {
+    text-decoration: none;
+    color: white;
 }
 .products-list-item:hover .products-name h3 {
     background-color: rgb(26, 188, 156)    
@@ -200,14 +209,17 @@ p {
     font-size: 14px;
     line-height: 26px;
 }
-.read_more_button {
-    padding: 16px 46px;
+.news-item-link {
+    display: inline-block;
+    padding: 16px;
+    width: 160px;
     border-radius: 5px;
     font-family: 'Open Sans', sans-serif;
     font-weight:300;
     font-size: 16px;
     line-height: 26px;
+    text-decoration: none;
+    text-align: center;
     color: #ffffff ;
     background-color: rgb( 78, 198, 171 );
-    cursor: pointer;
 }
