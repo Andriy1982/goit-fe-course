@@ -1,0 +1,133 @@
+html {
+    box-sizing: border-box;
+}
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+* {
+    margin: 0;
+    padding: 0;
+}
+.clearfix::after {
+    display: table;
+    content: '';
+    clear: both;
+}  
+img{
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+.conteiner {
+    width: 1110px;  
+    margin: 0px auto;
+    }
+
+/* HEDER */
+header {
+    padding: 38px 0px 32px;
+    /* background-color: chocolate; */
+}
+
+
+.logotip {
+    float: left;
+    display: block;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-family: 'Roboto', sans-serif;
+    font-size: 30px;
+    line-height: 32px;
+    color: #555252;
+}
+.logotip::first-letter {
+    color: rgb( 26, 188, 156 );
+    font-weight: bold;
+}
+.site-navigation {
+    list-style: none;
+}
+.navigation {
+    float: right;
+    padding-top: 10px;
+}
+.site-navigation li {
+        float: left;
+        margin-right: 30px;
+}
+.site-navigation li:last-child {
+    margin-right: 0px;
+}
+.site-navigation a {
+        display: block;
+        color: #0f0101;
+        text-decoration: none;
+        text-transform: uppercase;
+        font-family: 'Open Sans', sans-serif;
+        font-weight: bold;
+        font-size: 14px;
+        line-height: 11px;
+}
+.site-navigation a:hover,
+.site-navigation a:focus {
+    color: rgb( 26, 188, 156 );
+}
+/* COLLECTION */
+
+.colection {
+    padding: 100px 0px;
+    background-color: rgb( 233, 240, 253 );
+}
+.colection h2 {
+    margin-bottom: 30px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 48px;
+    font-weight: 900;
+    line-height: 32px;
+    text-align: center;
+    color: #515151;
+
+}
+.colection-list::before {
+    display: block;
+    margin: 0px auto 82px;
+    width: 164px;
+    height: 8px;
+    content: '' ;
+    background-color: #4ec6ab;
+}
+.colection-list {
+    list-style: none; 
+}
+.colection-list-item {
+    float: left; 
+    width: 255px;
+   }
+   .colection-list-item:not(:last-child) {
+    margin-right: 30px;
+   }
+  .colection-name {
+    background-color: rgb( 50, 50, 50 );
+}
+.colection-name h3 {
+    float: left;
+    padding: 7px 0px 7px 14px;
+    font-family: 'Roboto', sans-serif;
+    text-transform: uppercase;
+    font-weight: 900;
+    font-size: 18px;
+    line-height: 32px;
+}
+.colection-name p {
+    float: right;
+    color: rgb( 255, 255, 255 );  
+    background-color: rgba(255, 255, 255, 0.44);
+    padding: 7px 0px;
+    width: 54px;
+}
+.colection-name a {
+    text-decoration: none;
+    color: white;
+}
