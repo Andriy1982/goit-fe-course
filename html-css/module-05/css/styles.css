@@ -74,6 +74,36 @@ header {
 .site-navigation a:focus {
     color: rgb( 26, 188, 156 );
 }
+/* SLIDER */
+.slider {
+    position: relative;
+    
+}
+.slider img {
+    margin: 0px auto;
+    opacity: 0,52;
+}
+.touers {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    /* background-color: blueviolet; */
+    font-family: 'Roboto', sans-serif;
+    color: rgb(255, 255, 255);
+}
+.touers h2{
+    font-weight: 900;
+    font-size: 60px;
+    line-height: 82px;
+}
+.touers p {
+    font-weight: 300;
+    font-size: 24px;
+    line-height: 54px;
+}
+
+
 /* COLLECTION */
 
 .colection {
@@ -122,12 +152,21 @@ header {
 }
 .colection-name p {
     float: right;
-    color: rgb( 255, 255, 255 );  
-    background-color: rgba(255, 255, 255, 0.44);
     padding: 7px 0px;
     width: 54px;
-}
+    text-transform: uppercase;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 900;
+    text-align: center;
+    line-height: 32px;    
+    font-size: 18px;
+    color: rgb( 255, 255, 255 );  
+    background-color: rgba(255, 255, 255, 0.44);
+    }
 .colection-name a {
     text-decoration: none;
     color: white;
+}
+.colection-list-item:hover .colection-name {
+    background-color: rgb(26, 188, 156)
 }
