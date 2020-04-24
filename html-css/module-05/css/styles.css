@@ -121,10 +121,15 @@ header {
     width: 104px;
     height: 104px;
     background-color: rgba( 78, 198, 171, 0.6);
+background-image: url(/html-css/module-05/image/back_light.png);
+background-position: center;
+background-repeat: no-repeat;
+background-size: cover;
 
 }
 button {
     border: 0;
+    cursor: pointer;
 }
 .slider_button-right {
     float: right;
@@ -132,22 +137,22 @@ button {
     height: 104px;
     background-color: rgba( 78, 198, 171, 0.6);
  }
-.slider_button-left::after {
+/* .slider_button-left::after {
     display: block;
     content: '\2039';
     font-size: 100px;
     text-transform: uppercase;
     color: rgb( 255, 255, 255 );
     text-align: center;
-}
-    .slider_button-right::after {
-        display: block;
-        content: '\203A';
-        font-size: 100px;
-        text-transform: uppercase;
-        color: rgb( 255, 255, 255 );
-        text-align: center;
-    }
+} */
+ .slider_button-right::after {
+    display: block;
+    content: '\203A';
+    font-size: 100px;
+    text-transform: uppercase;
+    color: rgb( 255, 255, 255 );
+    text-align: center;
+  }
       
         /* font-size: 100px;
         font-family: "Pe";
@@ -222,6 +227,11 @@ button {
     float: left; 
     width: 255px;
    }
+
+   .colection-list-item:hover .overlay {
+    display: block; 
+   }
+
    .colection-list-item:not(:last-child) {
     margin-right: 30px;
    }
@@ -266,17 +276,14 @@ button {
     width: 255px;
     height: 282px;
     background-color: rgba(0, 0, 0, 0.5);
+    border: 10px solid rgba(255, 255, 255, 0.5);
+    background-clip: padding-box;
+    display: none;
 }
-/* .overlay_list_item_buttom {
-    width: 50px;
-    height: 50px;
-} */
+
 .overlay_list_item:nth-child(1) {
     margin-right: 8px;
-    background-image: url(/html-css/module-05/image/clock.svg);
-    background-repeat: no-repeat;
-    background-position: center;
-
+    
 }
 .overlay_list_item:nth-child(2) {
     margin-right: 8px;
@@ -289,16 +296,16 @@ button {
 }
 
 
-.overlay_list_item {
+/* .overlay_list_item {
     float: left;
     width: 50px;
     height: 50px;
     /* background-color: blue; */
-    border-width: 1px;
+    /* border-width: 1px;
     border-color: rgb( 255, 255, 255 );
-    border-style: solid;
+    border-style: solid; */ 
 
-}
+
 .overlay_list {
     position: absolute;
     left: 50%;
@@ -306,3 +313,59 @@ button {
     transform: translate(-50%, -50%);
     width: 166px;
 }
+
+.overlay_list_item_buttom {
+    display: block;
+    width: 50px;
+    height: 50px;
+    background-repeat: no-repeat;
+    background-position: center;
+    border-width: 1px;
+    border-color: rgb( 255, 255, 255 );
+    border-style: solid;
+    background-image: url(/html-css/module-05/image/clock.svg);
+    cursor: pointer;
+}
+
+.overlay_list_item_buttom:hover {
+    background-color: rgb( 26, 188, 156 );
+      
+}
+
+
+.overlay_list_item {
+    float: left;
+    /* border-width: 1px;
+    border-color: rgb( 255, 255, 255 );
+    border-style: solid; */
+}
+.last_button {
+    width: 166px;
+    padding-top: 8px;
+    padding-left: 36px;
+    font-size: 14px;
+    font-family: 'Open Sans', sans-serif;
+    color: rgb( 255, 255, 255 );
+    text-transform: uppercase;
+    line-height: 32px;
+    text-align: center;
+    background-color: rgb( 50, 50, 50 ); 
+    background-image: none
+      }
+      
+
+/* FOOTER */
+.footer {
+    padding: 34px 0px;
+        font-size: 16px;
+        font-family: 'Open Sans', sans-serif;
+        color: rgb( 254, 254, 254 );
+        line-height: 28px;
+        text-align: center;
+        background-color: rgb( 50, 50, 50 );
+}
+.footer a {
+color: rgb(70, 191, 169);
+text-decoration: none;
+}
+      
