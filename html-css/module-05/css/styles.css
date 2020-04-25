@@ -1,40 +1,47 @@
 html {
     box-sizing: border-box;
 }
+
 *,
 *::before,
 *::after {
     box-sizing: inherit;
 }
+
 * {
     margin: 0;
     padding: 0;
 }
+
 ul,
 ol {
   list-style: none;
 }
+
 .clearfix::after {
     display: table;
     content: '';
     clear: both;
-}  
+} 
+
 img{
     display: block;
     max-width: 100%;
     height: auto;
 }
+
 .conteiner {
     width: 1110px;  
     margin: 0px auto;
     }
-
-/* HEDER */
-header {
-    padding: 38px 0px 32px;
-    /* background-color: chocolate; */
+button {
+        border: 0;
+        cursor: pointer;
 }
 
+header {
+    padding: 38px 0px 32px;
+}
 
 .logotip {
     float: left;
@@ -46,17 +53,17 @@ header {
     line-height: 32px;
     color: #555252;
 }
+
 .logotip::first-letter {
     color: rgb( 26, 188, 156 );
     font-weight: bold;
 }
-.site-navigation {
-    list-style: none;
-}
+
 .navigation {
     float: right;
     padding-top: 10px;
 }
+
 .site-navigation li {
         float: left;
         margin-right: 30px;
@@ -64,6 +71,7 @@ header {
 .site-navigation li:last-child {
     margin-right: 0px;
 }
+
 .site-navigation a {
         display: block;
         color: #0f0101;
@@ -74,11 +82,12 @@ header {
         font-size: 14px;
         line-height: 11px;
 }
+
 .site-navigation a:hover,
 .site-navigation a:focus {
     color: rgb( 26, 188, 156 );
 }
-/* SLIDER */
+
 .slider {
     position: relative;
     margin: 0px auto;
@@ -87,21 +96,27 @@ header {
 .slider img {
     margin: 0px auto;
    }
+
 .touers {
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    /* background-color: blueviolet; */
     font-family: 'Roboto', sans-serif;
     color: rgb(255, 255, 255);
     z-index: 5;
 }
+
 .touers h2{
     font-weight: 900;
     font-size: 60px;
     line-height: 82px;
 }
+
+.touers h2:hover {
+    color: rgb(255, 114, 0);
+}
+
 .touers p {
     font-weight: 300;
     font-size: 24px;
@@ -121,86 +136,44 @@ header {
     width: 104px;
     height: 104px;
     background-color: rgba( 78, 198, 171, 0.6);
-background-image: url(/html-css/module-05/image/back_light.png);
-background-position: center;
-background-repeat: no-repeat;
-background-size: cover;
+    background-image: url(/module-05/image/ikon/angle-left.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
 
-}
-button {
-    border: 0;
-    cursor: pointer;
-}
 .slider_button-right {
     float: right;
     width: 104px;
     height: 104px;
     background-color: rgba( 78, 198, 171, 0.6);
+    background-image: url(/module-05/image/ikon/angle-right.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
  }
-/* .slider_button-left::after {
-    display: block;
-    content: '\2039';
-    font-size: 100px;
-    text-transform: uppercase;
-    color: rgb( 255, 255, 255 );
-    text-align: center;
-} */
- .slider_button-right::after {
-    display: block;
-    content: '\203A';
-    font-size: 100px;
-    text-transform: uppercase;
-    color: rgb( 255, 255, 255 );
-    text-align: center;
-  }
-      
-        /* font-size: 100px;
-        font-family: "Pe";
-        color: rgb( 255, 255, 255 );
-        text-transform: uppercase;
-        line-height: 0.11;
-        text-align: right;
-        position: absolute;
-        left: 1.783px;
-        top: 9.895px;
-        width: 22px;
-        height: 38px;
-        z-index: 80;
-      }
-      .Rectangle_5 {
-        background-color: rgb( 78, 198, 171 );
-        opacity: 0.651;
-        position: absolute;
-        left: 0px;
-        top: 0px;
-        width: 104px;
-        height: 104px;
-        z-index: 79;
-      }
-      
-} */
 
-/* COLLECTION */
+ .slider_button-left:hover,
+ .slider_button-right:hover {
+    background-color: rgba(26, 188, 156);
+ } 
 
-.colection {
-    padding: 100px 0px;
-    background-color: rgb( 233, 240, 253 );
-    max-width: 1600px;
-    margin: 0 auto;
-}
-.overlay_slider {
-    position: absolute; 
-  /*  display: none;   */
+ .overlay_slider {
+    position: absolute;  
     width: 100%;
     height: 100%;
     top:0;
     left: 0;
-    right: 0;
-    bottom: 0; 
-    /* background-color: rgba(139, 76, 76, 0.52); */
     background-color: rgba( 0, 0, 2, 0.5);
     z-index: 2; 
+} 
+ 
+.colection {
+    padding: 100px 0px;
+    background-color: rgb( 233, 240, 253 );
+    margin: 0 auto;
 }
+
 .colection h2 {
     margin-bottom: 30px;
     font-family: 'Roboto', sans-serif;
@@ -209,8 +182,8 @@ button {
     line-height: 32px;
     text-align: center;
     color: #515151;
-
 }
+
 .colection-list::before {
     display: block;
     margin: 0px auto 82px;
@@ -219,25 +192,25 @@ button {
     content: '' ;
     background-color: #4ec6ab;
 }
-.colection-list {
-    list-style: none; 
-}
+
 .colection-list-item {
     position: relative;
     float: left; 
     width: 255px;
-   }
+}
 
-   .colection-list-item:hover .overlay {
+.colection-list-item:hover .overlay {
     display: block; 
-   }
+}
 
-   .colection-list-item:not(:last-child) {
+.colection-list-item:not(:last-child) {
     margin-right: 30px;
-   }
-  .colection-name {
+}
+
+.colection-name {
     background-color: rgb( 50, 50, 50 );
 }
+
 .colection-name h3 {
     float: left;
     padding: 7px 0px 7px 14px;
@@ -259,16 +232,17 @@ button {
     font-size: 18px;
     color: rgb( 255, 255, 255 );  
     background-color: rgba(255, 255, 255, 0.44);
-    }
+}
+
 .colection-name a {
     text-decoration: none;
     color: white;
 }
+
 .colection-list-item:hover .colection-name {
     background-color: rgb(26, 188, 156)
 }
 
-/* OVERLAY COLECTION */
 .overlay {
     position: absolute;
     top: 0px;
@@ -281,30 +255,17 @@ button {
     display: none;
 }
 
-.overlay_list_item:nth-child(1) {
-    margin-right: 8px;
-    
+.overlay_list_item {
+    float: left;
 }
-.overlay_list_item:nth-child(2) {
-    margin-right: 8px;
-}
-.overlay_list_item:nth-child(4) {
-    width: 166px;
-}
+
 .overlay_list_item:not(:last-child) {
     margin-bottom: 8px;
 }
 
-
-/* .overlay_list_item {
-    float: left;
-    width: 50px;
-    height: 50px;
-    /* background-color: blue; */
-    /* border-width: 1px;
-    border-color: rgb( 255, 255, 255 );
-    border-style: solid; */ 
-
+.overlay_list_item:nth-child(-n+2) {
+    margin-right: 8px;
+}
 
 .overlay_list {
     position: absolute;
@@ -323,22 +284,19 @@ button {
     border-width: 1px;
     border-color: rgb( 255, 255, 255 );
     border-style: solid;
-    background-image: url(/html-css/module-05/image/clock.svg);
-    cursor: pointer;
+    cursor: pointer;    
 }
 
-.overlay_list_item_buttom:hover {
-    background-color: rgb( 26, 188, 156 );
-      
+.buttom_heard {
+    background-image: url(/module-05/image/ikon/heard.png) 
+}
+.buttom_shuffle {
+    background-image: url(/module-05/image/ikon/shuffle.png) 
+}
+.buttom_clock {
+   background-image: url(/module-05/image/ikon/clock.png) 
 }
 
-
-.overlay_list_item {
-    float: left;
-    /* border-width: 1px;
-    border-color: rgb( 255, 255, 255 );
-    border-style: solid; */
-}
 .last_button {
     width: 166px;
     padding-top: 8px;
@@ -350,11 +308,14 @@ button {
     line-height: 32px;
     text-align: center;
     background-color: rgb( 50, 50, 50 ); 
-    background-image: none
-      }
-      
+    background-image: url(/module-05/image/ikon/cart.svg);
+    background-position: 12px;
+}
 
-/* FOOTER */
+.overlay_list_item_buttom:hover {
+        background-color: rgb( 26, 188, 156 );    
+    }
+
 .footer {
     padding: 34px 0px;
         font-size: 16px;
@@ -364,6 +325,7 @@ button {
         text-align: center;
         background-color: rgb( 50, 50, 50 );
 }
+
 .footer a {
 color: rgb(70, 191, 169);
 text-decoration: none;
