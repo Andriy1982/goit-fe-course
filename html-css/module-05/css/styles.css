@@ -136,7 +136,7 @@ header {
     width: 104px;
     height: 104px;
     background-color: rgba( 78, 198, 171, 0.6);
-    background-image: url(/module-05/image/ikon/angle-left.svg);
+    background-image: url(../image/ikon/angle-left.svg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -147,7 +147,7 @@ header {
     width: 104px;
     height: 104px;
     background-color: rgba( 78, 198, 171, 0.6);
-    background-image: url(/module-05/image/ikon/angle-right.svg);
+    background-image: url(../image/ikon/angle-right.svg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -288,13 +288,13 @@ header {
 }
 
 .buttom_heard {
-    background-image: url(/module-05/image/ikon/heard.png) 
+    background-image: url(../image/ikon/heard.png) 
 }
 .buttom_shuffle {
-    background-image: url(/module-05/image/ikon/shuffle.png) 
+    background-image: url(../image/ikon/shuffle.png) 
 }
 .buttom_clock {
-   background-image: url(/module-05/image/ikon/clock.png) 
+   background-image: url(../image/ikon/clock.png) 
 }
 
 .last_button {
@@ -308,7 +308,7 @@ header {
     line-height: 32px;
     text-align: center;
     background-color: rgb( 50, 50, 50 ); 
-    background-image: url(/module-05/image/ikon/cart.svg);
+    background-image: url(../image/ikon/cart.svg);
     background-position: 12px;
 }
 
