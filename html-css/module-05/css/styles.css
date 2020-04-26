@@ -255,15 +255,15 @@ header {
     display: none;
 }
 
-.overlay_list_item {
+/* .overlay_list_buttom {
     float: left;
-}
+} */
 
-.overlay_list_item:not(:last-child) {
+.overlay_list_button:not(:last-child) {
     margin-bottom: 8px;
 }
 
-.overlay_list_item:nth-child(-n+2) {
+.overlay_list_button:nth-child(-n+2) {
     margin-right: 8px;
 }
 
@@ -275,10 +275,12 @@ header {
     width: 166px;
 }
 
-.overlay_list_item_buttom {
+.overlay_list_button{
+    float: left;
     display: block;
     width: 50px;
     height: 50px;
+    background-color: transparent;
     background-repeat: no-repeat;
     background-position: center;
     border-width: 1px;
@@ -287,13 +289,13 @@ header {
     cursor: pointer;    
 }
 
-.buttom_heard {
+.button_heard {
     background-image: url(../image/ikon/heard.png) 
 }
-.buttom_shuffle {
+.button_shuffle {
     background-image: url(../image/ikon/shuffle.png) 
 }
-.buttom_clock {
+.button_clock {
    background-image: url(../image/ikon/clock.png) 
 }
 
@@ -312,7 +314,7 @@ header {
     background-position: 12px;
 }
 
-.overlay_list_item_buttom:hover {
+.overlay_list_button:hover {
         background-color: rgb( 26, 188, 156 );    
     }
 
