@@ -255,10 +255,6 @@ header {
     display: none;
 }
 
-/* .overlay_list_buttom {
-    float: left;
-} */
-
 .overlay_list_button:not(:last-child) {
     margin-bottom: 8px;
 }
