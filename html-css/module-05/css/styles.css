@@ -90,12 +90,23 @@ header {
 
 .slider {
     position: relative;
-    margin: 0px auto;
-    max-width: 1600px;
 }
+
 .slider img {
     margin: 0px auto;
    }
+
+.slider::before {
+    display: block;
+    content: "";
+    position: absolute;  
+    width: 100%;
+    height: 100%;
+    top:0;
+    left: 0;
+    background-color: rgba( 0, 0, 2, 0.5);
+    z-index: 2; 
+}    
 
 .touers {
     position: absolute;
@@ -123,6 +134,7 @@ header {
     line-height: 54px;
 
 }
+
 .slider_button {
     position: absolute;
     top: 50%;
@@ -157,25 +169,14 @@ header {
  .slider_button-right:hover {
     background-color: rgba(26, 188, 156);
  } 
-
- .overlay_slider {
-    position: absolute;  
-    width: 100%;
-    height: 100%;
-    top:0;
-    left: 0;
-    background-color: rgba( 0, 0, 2, 0.5);
-    z-index: 2; 
-} 
- 
+  
 .colection {
     padding: 100px 0px;
     background-color: rgb( 233, 240, 253 );
-    margin: 0 auto;
 }
 
 .colection h2 {
-    margin-bottom: 30px;
+    margin-bottom: 82px;
     font-family: 'Roboto', sans-serif;
     font-size: 48px;
     font-weight: 900;
@@ -184,17 +185,16 @@ header {
     color: #515151;
 }
 
-.colection-list::before {
+.colection h2::after {
     display: block;
-    margin: 0px auto 82px;
-    width: 164px;
-    height: 8px;
     content: '' ;
     background-color: #4ec6ab;
+    width: 164px;
+    height: 8px;
+    margin: 30px auto 0px;
 }
 
 .colection-list-item {
-    position: relative;
     float: left; 
     width: 255px;
 }
@@ -243,12 +243,16 @@ header {
     background-color: rgb(26, 188, 156)
 }
 
+.img-wrap {
+    position: relative;
+}
+
 .overlay {
     position: absolute;
     top: 0px;
     left: 0px;
-    width: 255px;
-    height: 282px;
+    width: 100%;
+    height: 100%;
     background-color: rgba(0, 0, 0, 0.5);
     border: 10px solid rgba(255, 255, 255, 0.5);
     background-clip: padding-box;
@@ -288,9 +292,11 @@ header {
 .button_heard {
     background-image: url(../image/ikon/heard.png) 
 }
+
 .button_shuffle {
     background-image: url(../image/ikon/shuffle.png) 
 }
+
 .button_clock {
    background-image: url(../image/ikon/clock.png) 
 }
@@ -311,21 +317,21 @@ header {
 }
 
 .overlay_list_button:hover {
-        background-color: rgb( 26, 188, 156 );    
+    background-color: rgb( 26, 188, 156 );    
     }
 
 .footer {
     padding: 34px 0px;
-        font-size: 16px;
-        font-family: 'Open Sans', sans-serif;
-        color: rgb( 254, 254, 254 );
-        line-height: 28px;
-        text-align: center;
-        background-color: rgb( 50, 50, 50 );
+    font-size: 16px;
+    font-family: 'Open Sans', sans-serif;
+    color: rgb( 254, 254, 254 );
+    line-height: 28px;
+    text-align: center;
+    background-color: rgb( 50, 50, 50 );
 }
 
 .footer a {
-color: rgb(70, 191, 169);
-text-decoration: none;
+    color: rgb(70, 191, 169);
+    text-decoration: none;
 }
       
