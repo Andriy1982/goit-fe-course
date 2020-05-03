@@ -185,27 +185,27 @@ a {
 }
 
 .services_icon-alarm {
-    background-image: url(/module-06/image/icon/1.png);  
+    background-image: url(../image/icon/1.png);  
 }
 
 .services_icon-line-graph {
-    background-image: url(/module-06/image/icon/2.png);  
+    background-image: url(../image/icon/2.png);  
 }
 
 .services_icon-computer {
-    background-image: url(/module-06/image/icon/3.png);  
+    background-image: url(../image/icon/3.png);  
 }
 
 .services_icon-book {
-    background-image: url(/module-06/image/icon/4.png);  
+    background-image: url(../image/icon/4.png);  
 }
 
 .services_icon-home {
-    background-image: url(/module-06/image/icon/5.png);  
+    background-image: url(../image/icon/5.png);  
 }
 
 .services_icon-image {
-    background-image: url(/module-06/image/icon/6.png);  
+    background-image: url(../image/icon/6.png);  
 }
 
  .team_titel {
@@ -302,19 +302,19 @@ a {
  }
  
 .social-list__item-link_facebook {
-    background-image: url(/module-06/image/social_icons/facebook.png);
+    background-image: url(../image/social_icons/facebook.png);
 }
 
 .social-list__item-link_twitter {
-    background-image: url(/module-06/image/social_icons/twitter.png);
+    background-image: url(../image/social_icons/twitter.png);
 }
 
 .social-list__item-link_pinterest {
-    background-image: url(/module-06/image/social_icons/pinterest.png);
+    background-image: url(../image/social_icons/pinterest.png);
 }
 
 .social-list__item-link_instagram {
-    background-image: url(/module-06/image/social_icons/instagram.png);
+    background-image: url(../image/social_icons/instagram.png);
 }
 
 .container_footer {
