@@ -1,3 +1,55 @@
+/* crimson-text-italic - latin */
+@font-face {
+    font-family: 'Crimson Text';
+    font-style: italic;
+    font-weight: 400;
+    src: local('Crimson Text Italic'), local('CrimsonText-Italic'),
+         url('../fonts/crimson-text-v10-latin-italic.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+         url('../fonts/crimson-text-v10-latin-italic.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+  }
+
+  /* cookie-regular - latin */
+@font-face {
+    font-family: 'Cookie';
+    font-style: normal;
+    font-weight: 400;
+    src: local('Cookie-Regular'),
+         url('../fonts/cookie-v11-latin-regular.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+         url('../fonts/cookie-v11-latin-regular.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+  }
+
+  /* montserrat-regular - latin */
+@font-face {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    src: local('Montserrat Regular'), local('Montserrat-Regular'),
+         url('../fonts/montserrat-v14-latin-regular.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+         url('../fonts/montserrat-v14-latin-regular.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+  }
+  /* montserrat-700 - latin */
+  @font-face {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    src: local('Montserrat Bold'), local('Montserrat-Bold'),
+         url('../fonts/montserrat-v14-latin-700.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+         url('../fonts/montserrat-v14-latin-700.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+  }
+
+  /* roboto-slab-regular - latin */
+@font-face {
+    font-family: 'Roboto Slab';
+    font-style: normal;
+    font-weight: 400;
+    src: local(''),
+         url('../fonts/roboto-slab-v11-latin-regular.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+         url('../fonts/roboto-slab-v11-latin-regular.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+  }
+
+
+
+
 html {
     box-sizing: border-box;
 }
@@ -58,7 +110,7 @@ a {
 
 .logotip{
     font-size: 26px;
-    /* font-family: "Wisdom"; */
+    font-family: 'Cookie';
     color: #fed136;
     line-height: 1.577;
 }
@@ -110,7 +162,7 @@ a {
 .services_desckription {
     margin-bottom: 80px;
     font-size: 16px;
-    font-family: "DroidSerif";
+    font-family: 'Crimson Text';
     color: rgb( 119, 119, 119 );
     font-style: italic;
     text-align: center;
@@ -176,5 +228,13 @@ a {
     text-transform: uppercase;
     text-align: center;
   
+  }
+  
+  .contact_description {
+    font-size: 16px;
+    font-family: "DroidSerif";
+    color: rgb( 119, 119, 119 );
+    font-style: italic;
+    text-align: center;
   }
   
