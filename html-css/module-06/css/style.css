@@ -258,6 +258,7 @@ a {
 
  .img-wrap {
     position: relative;
+    transition: all 0.2s linear;
  }
 
  .overlay {
@@ -273,17 +274,16 @@ a {
     opacity: 0;
     background-image: linear-gradient( to top, rgba(252,227,138,0.9) 0%, rgba(243,129,129,0.9) 100%); 
     transition: opacity 200ms linear, transform 200ms linear;
-    box-shadow: 10px 10px rgb(149, 225, 211);   
 }
 
  .team_list-item:hover .overlay{
     opacity: 1;
     visibility: visible;
-    transform: translate(-10px, -10px)
  }
 
- .team_list-item:hover .team_list-item-image {
-    transform: translate(-10px, -10px)
+  .team_list-item:hover .img-wrap {
+    transform: translate(-10px, -10px);
+    box-shadow: 10px 10px rgb(149, 225, 211);
  }
 
  .social-list {

@@ -35,19 +35,19 @@
             <p class="services_desckription">Proin iaculis purus consequat sem cure.</p>
             <ul class="services_list">
                 <li class="services_list-item">
-                    <h3 class="services_list-item-title">E-Commerce</h3>
+                    <h3 class="services_list-item-title services_list-icon_basket">E-Commerce</h3>
                     <p class="services_list-item-desckription">Proin iaculis purus consequat sem cure 
                         digni ssim. Donec porttitora entum suscipit 
                         aenean rhoncus posuere odio in tincidunt.</p>
                 </li>
                 <li class="services_list-item">
-                    <h3 class="services_list-item-title">Responsive Web</h3>
+                    <h3 class="services_list-item-title services_list-icon_laptop">Responsive Web</h3>
                     <p class="services_list-item-desckription">Proin iaculis purus consequat sem cure 
                         digni ssim. Donec porttitora entum suscipit 
                         aenean rhoncus posuere odio in tincidunt.</p>
                 </li>
                 <li class="services_list-item">
-                    <h3 class="services_list-item-title">Web Security</h3>
+                    <h3 class="services_list-item-title services_list-icon_locked">Web Security</h3>
                     <p class="services_list-item-desckription">Proin iaculis purus consequat sem cure 
                         digni ssim. Donec porttitora entum suscipit 
                         aenean rhoncus posuere odio in tincidunt.</p>
@@ -59,8 +59,18 @@
             <h2 class="contact_title">Contact us</h2>
             <p class="contact_description">Proin iaculis purus consequat sem cure. </p>
             <form action="#" class="contact_form">
-                
-
+                <div class="wraper">
+                    <ul class="form_list">
+                        <li class="form_list-item">
+                            <input name="user_name" class="form_list-input"  type="text" placeholder="your name *" required minlength="2"></li>
+                        <li class="form_list-item">
+                            <input name="user_email" class="form_list-input" type="email" placeholder="your e-mail *" required></li>
+                        <li class="form_list-item">
+                            <input name="user_subject" class="form_list-input" type="text" placeholder="subject"></li>
+                    </ul>
+                           <textarea name="user_message" class="form_messege form_list-input"  id="" placeholder="Your message *" required minlength="5"></textarea>                    
+                </div>
+                <button class="form_btn">Send Message</button>
             </form>
             </div>
         </section>
