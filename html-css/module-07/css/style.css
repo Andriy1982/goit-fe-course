@@ -132,7 +132,6 @@ a {
     display: flex;
 }
 
-
 .navigation_list-item:not(:last-child) {
     margin-right: 40px;
 }
@@ -147,17 +146,17 @@ a {
 }
 
 .navigation_list-link:hover,
- .navigation_list-link:focus {
+.navigation_list-link:focus {
     color: #fed136;    
  }
 
  /* SERVISES */
 
- .services {
+.services {
     margin-bottom: 122px;
- }
+}
  
- .services_title {
+.services_title {
     font-size: 2.5rem;
     font-family: var(--main-font);
     color: rgb( 34, 34, 34 );
@@ -230,11 +229,13 @@ a {
 
  /* CONTACTS */
    
- .contact {
+.contact {
      padding-top: 110px;
      padding-bottom: 114px;
      background-color: rgb(34, 34, 34);
      background-image: url(../image/map_image.png);
+     background-repeat: no-repeat;
+     background-position: right;
  }
 
  .contact_title {
