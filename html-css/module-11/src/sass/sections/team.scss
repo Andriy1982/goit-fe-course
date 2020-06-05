@@ -1,0 +1,109 @@
+
+.team {
+    padding-top: 38px;
+    padding-bottom: 82px;
+}
+
+.team__title {
+    margin-bottom: 40px;
+}
+
+.team__text {
+    margin-bottom: 88px;
+    font-size: 15px;
+    font-family: $secondary-font;
+    color:$section-secondary-color;
+    line-height: 1.6;
+    text-align: center;
+}
+
+.team__list {
+    display: flex;
+    justify-content: space-between;
+}
+
+.team__item {
+    width: 380px;
+
+    &:hover .overlay{
+        opacity: 1;
+        visibility: visible;
+    } 
+
+    &:hover .img-wrap {
+        transform: translate(-10px, -10px);
+        box-shadow: 10px 10px rgb(149, 225, 211);
+    }
+}
+
+.img-wrap {
+    position: relative;
+    margin-bottom: 28px;
+    transition: all 0.2s linear;
+}
+
+.team__item-name {
+    margin-bottom: 6px;
+    font-weight: 400;
+    font-family: $main-font;
+    color: $sections-color;
+    text-transform: uppercase;
+    text-align: center;      
+    font-size: 14px;
+}
+
+.team__item-specialty {
+    font-family: $secondary-font;
+    color: $section-secondary-color;
+    font-style: italic;
+    line-height: 1.6;
+    text-align: center;
+    font-size: 15px;
+}
+
+.overlay {
+    @include center-flex ('all');
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    visibility: hidden;
+    opacity: 0;
+    background-image: linear-gradient( to top, rgba(252,227,138,0.9) 0%, rgba(243,129,129,0.9) 100%);
+    transition: all 200ms linear;
+}
+
+.social-list {
+    display: flex;
+}
+
+.social-list__link {
+    @include center-flex ('all');
+    width: 56px;
+    height: 56px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: $transition-color;
+    transition: background-color 200ms linear;
+
+    &:hover {
+        background-color: rgb(243, 129, 129);
+    }
+
+    &:hover .social-list__svg{
+        fill: $primary-color;
+    }
+}
+
+.social-list__item:not(:last-child) {
+    border-right: 1px solid rgba(243, 129, 129,0.502);
+}
+
+.social-list__svg{
+    display: block;
+    width: 28px;
+    height: 28px;
+    fill: rgb(243, 129, 129);
+    transition: fill 200ms linear;
+}
